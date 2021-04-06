@@ -8,7 +8,8 @@
     "start": "webpack serve --config webpack/webpack.dev.js",
     "webpack-dev-server": "node --max_old_space_size=4096 webpack serve ",
     "webpack:dev": "cross-env  webpack serve --config webpack/webpack.dev.js",
-    "build": "webpack --config webpack/webpack.dev.js"
+    "build": "webpack --config webpack/webpack.dev.js",
+    "heroku-postbuild": "node client-server.js"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
+    "live-server": "^1.2.1",
     "pixi.js": "^6.0.1"
   }
 }

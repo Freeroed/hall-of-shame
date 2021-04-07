@@ -9,7 +9,7 @@
     "webpack-dev-server": "node --max_old_space_size=4096 webpack serve ",
     "webpack:dev": "cross-env  webpack serve --config webpack/webpack.dev.js",
     "build": "webpack --config webpack/webpack.dev.js",
-    "prod:run": "http-server --path=dist"
+    "prod:run": "http-server ./dist/ --port=80"
   },
   "repository": {
     "type": "git",

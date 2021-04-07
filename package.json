@@ -9,7 +9,7 @@
     "webpack-dev-server": "node --max_old_space_size=4096 webpack serve ",
     "webpack:dev": "cross-env  webpack serve --config webpack/webpack.dev.js",
     "build": "webpack --config webpack/webpack.dev.js",
-    "prod:run": "node client-server.js"
+    "prod:run": "http-server --path=dist"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
+    "http-server": "^0.12.3",
     "live-server": "^1.2.1",
     "pixi.js": "^6.0.1"
   }
